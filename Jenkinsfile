@@ -16,7 +16,7 @@ pipeline {
             steps {
               sh '''
                   #oc start-build --from-build=<build_name>
-                  oc start-build -F . --from-dir=./src/main/docker/
+                  oc start-build app --from-dir=./src/main/docker/
               '''
             }
         }
