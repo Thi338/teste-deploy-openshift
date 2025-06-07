@@ -1,4 +1,4 @@
-apiVersion: build.OpenShift.io/v1
+apiVersion: build.openShift.io/v1
 kind: BuildConfig
 metadata:
   labels:
