@@ -16,7 +16,6 @@ pipeline {
             steps {
               sh '''
                   #oc start-build --from-build=<build_name>
-                  oc create -f BuildConfig.yaml
                   oc start-build teste-deploy-openshift -F --from-dir=/src/main/docker
               '''
             }
