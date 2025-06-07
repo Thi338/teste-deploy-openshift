@@ -16,7 +16,8 @@ pipeline {
             steps {
               sh '''
                   #oc start-build --from-build=<build_name>
-                  oc start-build teste-deploy-openshift
+                  oc create -f BuildConfig.yaml
+                  oc start-build teste-deploy-openshift -F
               '''
             }
         }
