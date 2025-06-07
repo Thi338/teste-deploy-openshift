@@ -17,4 +17,4 @@ spec:
     type: Docker
     dockerStrategy:
       # Find the image build instructions in./Dockerfile
-      dockerfilePath: src/main/docker/Dockerfile.jvm
+      dockerfilePath: src/main/docker/Dockerfile
